@@ -39,8 +39,7 @@
 body{
   font-family: var(--ff-primary);
   background-color: var(--clr-black);
-  color: var(--clr-grey-green);
-  font-size: 1rem;
+  color: var(--clr-grey-green);;
   line-height: 1.6;
   text-align: center;
 
@@ -50,18 +49,21 @@ a{
   text-decoration: none;
   font-size: 1.75rem;
 }
+
+
+
 h1{
-  font-size: 6rem;
+  font-size: 10rem;
 }
 h2{
-  font-size: 3rem;
+  font-size: 4rem;
 }
 p{
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   font-family: var(--ff-text);
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   h1{
     font-size: 6rem;
   }
@@ -73,7 +75,6 @@ p{
   }
   
 }
-
   
 .btn{
   display: inline-block;
@@ -116,7 +117,7 @@ p{
   margin-bottom: 1rem;
 }
 .content-container p{
-  padding: 5vh 25vw;
+margin: 1rem 15vw;;
 }
 .head-btn{
  padding: 0.5rem 1.5rem;
