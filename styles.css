@@ -61,18 +61,7 @@ p{
   font-family: var(--ff-text);
 }
 
-@media screen and (max-width: 768px){
-  h1{
-    font-size: 3rem;
-  }
-  h2{
-    font-size: 2rem;
-  }
-  p{
-    font-size: 1rem;
-  }
-  
-}
+
 
   
 .btn{
