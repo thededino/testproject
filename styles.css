@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Font*/
+.jersey-15-regular {
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.jersey-10-regular {
+  font-family: "Jersey 10", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.signika-negative {
+  font-family: "Signika Negative", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Variables*/
+:root {
+  --ff-primary: 'Jersey 15', serif;
+  --ff-secondary : 'Jersey 10', serif;
+  --ff-text: 'Signika Negative', serif;
+  --clr-primary: #3B6A3A;
+  --clr-primary-light: #699c69;
+  --clr-primary-dark: #0a3d2a;
+  --clr-black: #1f1f1f;
+  --clr-grey-green: #a9b7a0;
+  --transation: all 0.3s linear;
+}
+
+body{
+  font-family: var(--ff-primary);
+  background-color: var(--clr-black);
+  color: var(--clr-grey-green);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+
+}
+
+a{
+  text-decoration: none;
+  font-size: 1.75rem;
+}
+h1{
+  font-size: 6rem;
+}
+h2{
+  font-size: 3rem;
+}
+p{
+  font-size: 1.5rem;
+  font-family: var(--ff-text);
+}
+
+@media screen and (max-width: 768px){
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  
+}
+
+  
+.btn{
+  display: inline-block;
+   background-color: var(--clr-primary);
+   color: var(--clr-grey-green);
+   padding: 0.5rem 1rem;
+   margin-top: 1rem;
+   border-radius: 0.5rem;
+   cursor: pointer;
+   transition: var(--transation);
+ }
+ .btn:hover{
+   background-color: var(--clr-grey-green);
+   color: var(--clr-primary);
+  
+ }
+
+.header{
+ 
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(./scrs/imgs/HeaderBack.jpg) center/cover no-repeat fixed;
+  height: 85vh;
+  position: relative;
+}
+.content-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+}
+.content-container h1{
+  color: var(--clr-primary);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-shadow: var(--clr-primary-light) 2px 2px 0;
+}
+.content-container h2{
+  color: var(--clr-grey-green);
+  margin-bottom: 1rem;
+}
+.content-container p{
+  padding: 5vh 25vw;
+}
+.head-btn{
+ padding: 0.5rem 1.5rem;
+ font-family: var(--ff-secondary);
+}
