@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,6 +10,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 .jersey-10-regular {
   font-family: "Jersey 10", serif;
   font-weight: 400;
@@ -25,101 +26,219 @@
 
 /*Variables*/
 :root {
-  --ff-primary: 'Jersey 15', serif;
-  --ff-secondary : 'Jersey 10', serif;
-  --ff-text: 'Signika Negative', serif;
-  --clr-primary: #3B6A3A;
+  --ff-primary: "Jersey 15", serif;
+  --ff-secondary: "Jersey 10", serif;
+  --ff-text: "Signika Negative", serif;
+  --clr-primary: #3b6a3a;
   --clr-primary-light: #699c69;
   --clr-primary-dark: #0a3d2a;
   --clr-black: #1f1f1f;
+  --clr-grey: #2b2b2b;
+  --clr-grey2: #444444;
   --clr-grey-green: #a9b7a0;
-  --transation: all 0.3s linear;
+  --transition: all 0.3s linear;
 }
 
-body{
+body {
   font-family: var(--ff-primary);
   background-color: var(--clr-black);
-  color: var(--clr-grey-green);;
+  color: var(--clr-grey-green);
   line-height: 1.6;
   text-align: center;
-
 }
 
-a{
+a {
   text-decoration: none;
+  font-size: 1.15rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
   font-size: 1.75rem;
 }
 
-
-
-h1{
-  font-size: 10rem;
-}
-h2{
-  font-size: 4rem;
-}
-p{
-  font-size: 2.25rem;
+p {
+  font-size: 0.85rem;
   font-family: var(--ff-text);
 }
 
+h3 {
+  font-size: 1.5rem;
+}
+
+.clear-fix::before,
+.clear-fix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
-  h1{
+  h1 {
     font-size: 6rem;
   }
-  h2{
-    font-size: 2.5rem;
-  }
-  p{
-    font-size: 1.5rem;
-  }
-  
-}
-  
-.btn{
-  display: inline-block;
-   background-color: var(--clr-primary);
-   color: var(--clr-grey-green);
-   padding: 0.5rem 1rem;
-   margin-top: 1rem;
-   border-radius: 0.5rem;
-   cursor: pointer;
-   transition: var(--transation);
- }
- .btn:hover{
-   background-color: var(--clr-grey-green);
-   color: var(--clr-primary);
-  
- }
 
-.header{
- 
-  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(./scrs/imgs/HeaderBack.jpg) center/cover no-repeat fixed;
+  h2 {
+    font-size: 2.75rem;
+  }
+  h3 {
+    font-size: 2.25rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+
+  a {
+    font-size: 1.75rem;
+  }
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--clr-primary);
+  color: var(--clr-grey-green);
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--clr-grey-green);
+  color: var(--clr-primary);
+}
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./scrs/imgs/HeaderBack.jpg) center/cover no-repeat fixed;
   height: 85vh;
   position: relative;
 }
-.content-container{
+
+.content-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-
 }
-.content-container h1{
+
+.content-container h1 {
   color: var(--clr-primary);
   text-transform: uppercase;
   margin-bottom: 1rem;
   text-shadow: var(--clr-primary-light) 2px 2px 0;
 }
-.content-container h2{
+
+.content-container h2 {
   color: var(--clr-grey-green);
   margin-bottom: 1rem;
 }
-.content-container p{
-margin: 1rem 15vw;;
+
+.content-container p {
+  margin: 1rem 15vw;
 }
-.head-btn{
- padding: 0.5rem 1.5rem;
- font-family: var(--ff-secondary);
+
+.head-btn {
+  padding: 0.5rem 1.5rem;
+  font-family: var(--ff-secondary);
+}
+
+.nav-sec {
+  padding: 1.5rem;
+  position: relative;
+}
+
+.nav-sec p {
+  padding: 0.5rem 0;
+}
+.sec-btn {
+  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
+}
+@media screen and (min-width: 568px) {
+  .nav-sec {
+    float: left;
+    width: 50%;
+  }
+  .sec-btn {
+    font-size: 1.25rem;
+  }
+}
+.about {
+  background-color: var(--clr-black);
+  transition: linear 0.2s all;
+}
+.projects {
+  background-color: var(--clr-black);
+  transition: linear 0.2s all;
+}
+.about:hover {
+  background-color: var(--clr-grey);
+}
+
+.about:hover a {
+  outline: solid 2px var(--clr-primary-light);
+  outline-offset: 0.15rem;
+}
+.projects:hover {
+  background-color: var(--clr-grey);
+}
+.projects:hover a {
+  outline: solid 2px var(--clr-primary-light);
+  outline-offset: 0.15rem;
+}
+
+.review {
+  position: relative;
+  background-color: var(--clr-grey);
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  margin: 1.5rem;
+}
+
+.review img {
+  transition: linear 0.2s all;
+  width: 100px;
+  height: 100px;
+  clip-path: circle(50%);
+  object-fit: cover;
+}
+
+.review:hover h3 {
+  transition: linear 0.5s all;
+  text-shadow: var(--clr-primary) 3.5px 3.5px 0;
+}
+
+@media screen and (max-width: 881px) {
+  .review {
+    position: relative;
+    background-color: var(--clr-grey);
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+    margin: 1.5rem;
+  }
+  
+}
+@media screen and (min-width: 882px) {
+  .review {
+    float: left;
+    width: 31.333333332%;
+    height: 24rem;
+    margin-left: 1.5%;
+    margin-right: 0;
+  }
+  @media screen and (min-width: 1193px) {
+    .review {
+      float: left;
+      width: 31.333333332%;
+      height: 21rem;
+      margin-left: 1.5%;
+      margin-right: 0;
+    }
+  }
 }
